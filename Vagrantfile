@@ -14,7 +14,6 @@ Vagrant::Config.run do |config|
   end
   config.vm.define :el6 do |el6_config|
     el6_config.vm.box = "centos6-64-envpuppet-latest"
-    el6_config.vm.boot_mode = :gui
     el6_config.vm.host_name = "testcentos.example.com"
     el6_config.vm.box_url = "http://files.penumbra.be/vagrant/centos6-64-envpuppet-latest.box"
     el6_config.vm.provision :puppet do |puppet|
